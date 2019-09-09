@@ -1,1 +1,51 @@
-<h1>oi</h1>
+<div class="container">
+  <div class="text-center calculator-wrapper col-8 offset-2">
+    <input ng-model="display" class="col-10 offset-1 form-control" type="text" disabled>
+    <div class="mt-4 row">
+      <div class="btn-wrapper col-12">
+        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[0]}}</button>
+        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[1]}}</button>
+        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[2]}}</button>
+        <button class="col-2 btn btn-danger" type="button">{{teclas[3]}}</button>
+      </div>
+    </div>
+
+    <div class="mt-2 row">
+      <div class="btn-wrapper col-12">
+        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[4]}}</button>
+        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[5]}}</button>
+        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[6]}}</button>
+        <button class="col-2 btn btn-danger" type="button">{{teclas[7]}}</button>
+      </div>
+    </div>
+
+    <div class="mt-2 row">
+      <div class="btn-wrapper col-12">
+        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[8]}}</button>
+        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[9]}}</button>
+        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[10]}}</button>
+        <button class="col-2 btn btn-danger" type="button">{{teclas[11]}}</button>
+      </div>
+    </div>
+
+    <div class="mt-2 row">
+      <div class="btn-wrapper col-12">
+        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[12]}}</button>
+        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[13]}}</button>
+        <button class="col-2 mr-2 btn btn-danger" type="button">{{teclas[14]}}</button>
+        <button class="col-2 btn btn-danger" type="button">{{teclas[15]}}</button>
+      </div>
+    </div>
+
+    <div class="mt-2 row">
+      <div class="col-12">
+        <button class="ce btn btn-primary">CE</button>
+        <button class="igual btn btn-success">=</button>
+      </div>  
+    </div>
+    
+  </div>
+  <div class="row justify-content-center mt-4">
+    <app-log></app-log>
+  </div>
+</div>
