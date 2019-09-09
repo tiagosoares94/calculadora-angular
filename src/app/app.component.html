@@ -1,46 +1,46 @@
 <div class="container">
   <div class="text-center calculator-wrapper col-8 offset-2">
-    <input ng-model="display" class="col-10 offset-1 form-control" type="text" disabled>
+    <input value={{display}} class="col-10 offset-1 form-control" disabled type="text">
     <div class="mt-4 row">
       <div class="btn-wrapper col-12">
-        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[0]}}</button>
-        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[1]}}</button>
-        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[2]}}</button>
-        <button class="col-2 btn btn-danger" type="button">{{teclas[3]}}</button>
+        <button (click)="addDigito('7')" class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[0]}}</button>
+        <button (click)="addDigito('8')" class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[1]}}</button>
+        <button (click)="addDigito('9')" class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[2]}}</button>
+        <button (click)="addDigito('+')" class="col-2 btn btn-danger" type="button">{{teclas[3]}}</button>
       </div>
     </div>
 
     <div class="mt-2 row">
       <div class="btn-wrapper col-12">
-        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[4]}}</button>
-        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[5]}}</button>
-        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[6]}}</button>
-        <button class="col-2 btn btn-danger" type="button">{{teclas[7]}}</button>
+        <button (click)="addDigito('4')" class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[4]}}</button>
+        <button (click)="addDigito('5')" class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[5]}}</button>
+        <button (click)="addDigito('6')" class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[6]}}</button>
+        <button (click)="addDigito('-')" class="col-2 btn btn-danger" type="button">{{teclas[7]}}</button>
       </div>
     </div>
 
     <div class="mt-2 row">
       <div class="btn-wrapper col-12">
-        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[8]}}</button>
-        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[9]}}</button>
-        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[10]}}</button>
-        <button class="col-2 btn btn-danger" type="button">{{teclas[11]}}</button>
+        <button (click)="addDigito('1')" class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[8]}}</button>
+        <button (click)="addDigito('2')" class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[9]}}</button>
+        <button (click)="addDigito('3')" class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[10]}}</button>
+        <button (click)="addDigito('*')" class="col-2 btn btn-danger" type="button">{{teclas[11]}}</button>
       </div>
     </div>
 
     <div class="mt-2 row">
       <div class="btn-wrapper col-12">
-        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[12]}}</button>
-        <button class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[13]}}</button>
-        <button class="col-2 mr-2 btn btn-danger" type="button">{{teclas[14]}}</button>
-        <button class="col-2 btn btn-danger" type="button">{{teclas[15]}}</button>
+        <button (click)="addDigito('.')" class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[12]}}</button>
+        <button (click)="addDigito('0')" class="col-2 mr-2 btn btn-secondary" type="button">{{teclas[13]}}</button>
+        <button (click)="addDigito('%')" class="col-2 mr-2 btn btn-danger" type="button">{{teclas[14]}}</button>
+        <button (click)="addDigito('/')" class="col-2 btn btn-danger" type="button">{{teclas[15]}}</button>
       </div>
     </div>
 
     <div class="mt-2 row">
       <div class="col-12">
-        <button class="ce btn btn-primary">CE</button>
-        <button class="igual btn btn-success">=</button>
+        <button (click)="ce()" class="ce btn btn-primary">CE</button>
+        <button (click)="calcular()" class="igual btn btn-success">=</button>
       </div>  
     </div>
     
