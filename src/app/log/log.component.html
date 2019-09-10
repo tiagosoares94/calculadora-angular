@@ -1,1 +1,6 @@
-<p>log aqui</p>
+<div class="logs-wrapper" *ngIf="servico.logs.length > 0">
+  <div *ngFor="let c of servico.logs; let i = index">{{servico.logs[i]}}</div>
+</div>
+<div *ngIf="servico.logs.length === 0">
+  <h6 class="text-danger">Log Vazio</h6>
+</div>

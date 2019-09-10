@@ -1,0 +1,5 @@
+.logs-wrapper {
+  overflow-y: auto;
+  height: 250px;
+  border: 4px #c0c0c0 solid;
+}
