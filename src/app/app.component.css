@@ -1,3 +1,7 @@
+* {
+  outline: 0 !important;
+}
+
 p {
   font-family: Lato;
 }
@@ -10,12 +14,13 @@ p {
   border: 4px #fff solid;
 }
 
-.ce {
-  margin-right: 10px ;
-  width: 36%;
+.btn {
+  border: 4px solid silver !important;
+  box-shadow: 0 !important;
 }
 
-.igual {
-  width: 36%;
-
+.btn:focus {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important; 
 }
